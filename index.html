@@ -45,7 +45,7 @@
     <div class="hero-animated-text">
         <h1>Munio Pouch</h1>
         <h2>Enjoy a Distraction-Free School Day</h2>
-        <div class="hero-actions. appear-on-scroll">    
+        <div class="hero-actions appear-on-scroll">    
           <p>
           The Munio Pouch is a lockable fabric pouch designed specifically for school use.
           Each student places their phone inside the pouch, which is then secured using a
@@ -57,7 +57,7 @@
           <div class="card">One individual pouch per student</div>
           <div class="card">Secure locking pin / unlocking tool system</div>
           <div class="card">Suitable for daily use in both primary and secondary schools</div>
-          <div class="contact-info-grid"><a class="btn-primary" href="contact.html">Request Demo / Pricing</a></div>
+          <div class="contact-info-grid"><a class="btn-primary" href="#contact">Request Demo / Pricing</a></div>
         </div>
     </div>
 </header>
@@ -570,7 +570,7 @@
 
   <div class="form-wrap">
     <h2>Your Details</h2>
-    <form action="/submit" method="POST">
+      <form id="contactForm">
       <div class="form-row">
         <div>
           <label for="name">Name</label>
@@ -700,6 +700,27 @@
 
   window.addEventListener("scroll", setActive);
   window.addEventListener("load", setActive);
-</script>
 
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    const response = await fetch(
+      "https://script.google.com/macros/s/AKfycbz86AV_xqNJXjlX42g75wY658gjCvXeDDNA-M7ZPzrACNPoXukLbcJuaT09_SZR8xyA_g/exec",
+      {
+        method: "POST",
+        body: data
+      }
+    );
+
+    if (response.ok) {
+      window.location.href = "thank-you.html";
+    } else {
+      alert("Submission failed. Please try again.");
+    }
+  });
+</script>
 </body>
