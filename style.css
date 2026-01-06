@@ -703,3 +703,17 @@
 .modal-card p{
   margin: 0 0 16px;
 }
+
+/* ===== Language toggle ===== */
+.lang-zh { display: none; }
+html[data-lang="zh"] .lang-en { display: none; }
+html[data-lang="zh"] .lang-zh { display: block; }
+
+/* Make the button look like your nav links */
+.nav-right .lang-toggle{
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  padding: 8px 0;
+}

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Munio Pouch | Creative Spot</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Smooth anchor scroll -->
   <style>
     html { scroll-behavior: smooth; }
     section[id] { scroll-margin-top: 90px; }
@@ -20,14 +19,17 @@
   <div class="nav-left">
     <div class="nav-logo"><img src="assets/Logo.jpg" alt="Creative Spot"></div>
   </div>
+
   <div class="nav-right">
-    <a href="#home" class="nav-link active">Home</a>
-    <a href="#how" class="nav-link">How It Works</a>
-    <a href="#qa" class="nav-link">Q&amp;A</a>
-    <a href="#resources" class="nav-link">Resources</a>
-    <a href="#global" class="nav-link">Global Trend</a>
-    <a href="#contact" class="nav-link">Contact</a>
-    <a href="index_c.html" class="nav-link">中文</a>
+    <a href="#home" class="nav-link active" data-en="Home" data-zh="首頁">Home</a>
+    <a href="#how" class="nav-link" data-en="How It Works" data-zh="運作方式">How It Works</a>
+    <a href="#qa" class="nav-link" data-en="Q&A" data-zh="常見問題">Q&amp;A</a>
+    <a href="#resources" class="nav-link" data-en="Resources" data-zh="參考資料">Resources</a>
+    <a href="#global" class="nav-link" data-en="Global Trend" data-zh="國際趨勢">Global Trend</a>
+    <a href="#contact" class="nav-link" data-en="Contact" data-zh="聯絡我們">Contact</a>
+
+    <!-- Language toggle button -->
+    <button type="button" class="nav-link lang-toggle" id="langToggle" aria-label="Toggle language">中文</button>
   </div>
 </div>
 
@@ -42,95 +44,171 @@
   </div>
 
   <div class="hero-animated-text">
-    <h1>Munio Pouch</h1>
-    <h2>Enjoy a Distraction-Free School Day</h2>
 
-    <!-- FIX: removed dot in class name -->
-    <div class="hero-actions. appear-on-scroll">
-      <p>
-        The Munio Pouch is a lockable fabric pouch designed specifically for school use.
-        Each student places their phone inside the pouch, which is then secured using a
-        dedicated locking mechanism. Students keep the pouch with them throughout the day,
-        but cannot access their phone until it is unlocked by a designated unlocking device.
-      </p>
+    <!-- EN -->
+    <div class="lang lang-en">
+      <h1>Munio Pouch</h1>
+      <h2>Enjoy a Distraction-Free School Day</h2>
 
-      <div class="grid">
-        <div class="card">Durable, classroom-ready construction</div>
-        <div class="card">One individual pouch per student</div>
-        <div class="card">Secure locking pin / unlocking tool system</div>
-        <div class="card">Suitable for daily use in both primary and secondary schools</div>
+      <div class="appear-on-scroll">
+        <p>
+          The Munio Pouch is a lockable fabric pouch designed specifically for school use.
+          Each student places their phone inside the pouch, which is then secured using a
+          dedicated locking mechanism. Students keep the pouch with them throughout the day,
+          but cannot access their phone until it is unlocked by a designated unlocking device.
+        </p>
 
-        <div class="contact-info-grid">
-          <a class="btn-primary" href="#contact">Request Demo / Pricing</a>
+        <div class="grid">
+          <div class="card">Durable, classroom-ready construction</div>
+          <div class="card">One individual pouch per student</div>
+          <div class="card">Secure locking pin / unlocking tool system</div>
+          <div class="card">Suitable for daily use in both primary and secondary schools</div>
+
+          <div class="contact-info-grid">
+            <a class="btn-primary" href="#contact">Request Demo / Pricing</a>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- ZH -->
+    <div class="lang lang-zh">
+      <h1>Munio Pouch</h1>
+      <h2>專注每一堂課・從收起手機開始</h2>
+
+      <div class="appear-on-scroll">
+        <p>
+          Munio Pouch 為學校而設的鎖扣手機袋。學生把手機放入袋內並鎖上，
+          上課期間無法打開；放學或指定時段由授權職員解鎖，讓手機「在身邊，不在手上」，
+          建立更專注、更寧靜的學習環境。
+        </p>
+
+        <div class="grid">
+          <div class="card">袋身物料耐用，適合日常課室使用</div>
+          <div class="card">每位學生擁有獨立手機袋</div>
+          <div class="card">專用鎖扣／工具開關，確保安全</div>
+          <div class="card">適用於小學及中學日常上課安排</div>
+
+          <div class="contact-info-grid">
+            <a class="btn-primary" href="#contact">查詢示範／索取報價</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </header>
 
 <!-- ================= HOME CONTENT ================= -->
 <section class="section-soft">
   <div class="section">
-    <h2>Designed for Real School Life</h2>
-    <p>
-      We understand that every school operates with different routines and schedules.
-      The Munio Pouch integrates smoothly into morning registration, assemblies,
-      lesson transitions, or tutor periods — without requiring building works,
-      installation, or additional storage space.
-    </p>
 
-    <div class="section">
-      <div class="contact-info-grid">
-        <div class="card">Whole-school daily policy</div>
-        <div class="card">Specific year groups or classes</div>
-        <div class="card">Exam periods, tests and assessments</div>
-        <div class="card">School trips and visits</div>
+    <div class="lang lang-en">
+      <h2>Designed for Real School Life</h2>
+      <p>
+        We understand that every school operates with different routines and schedules.
+        The Munio Pouch integrates smoothly into morning registration, assemblies,
+        lesson transitions, or tutor periods — without requiring building works,
+        installation, or additional storage space.
+      </p>
+
+      <div class="section">
+        <div class="contact-info-grid">
+          <div class="card">Whole-school daily policy</div>
+          <div class="card">Specific year groups or classes</div>
+          <div class="card">Exam periods, tests and assessments</div>
+          <div class="card">School trips and visits</div>
+        </div>
       </div>
     </div>
+
+    <div class="lang lang-zh">
+      <h2>可因應不同情境靈活運用</h2>
+      <p>
+        我們明白每間學校的日常流程與作息不同。Munio Pouch 可自然融入
+        早會點名、集會、課堂轉堂或班主任課等安排，無需裝修、安裝或額外儲物空間。
+      </p>
+
+      <div class="section">
+        <div class="contact-info-grid">
+          <div class="card">全校日常政策</div>
+          <div class="card">只針對某些級別或班別</div>
+          <div class="card">考試期間或測驗時使用</div>
+          <div class="card">戶外學習、參觀活動等</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
-  
+
 <section class="section">
-  <h3>A Practical and Respectful Mobile-Free Learning Solution</h3>
-  <p>
-    Munio Pouch is designed to help schools create a mobile-free learning
-    environment without removing students’ personal belongings.
-    Phones are kept securely with students but remain inaccessible
-    during school hours, encouraging responsibility and healthy
-    digital boundaries.<br><br>
+  <div class="lang lang-en">
+    <h3>A Practical and Respectful Mobile-Free Learning Solution</h3>
+    <p>
+      Munio Pouch is designed to help schools create a mobile-free learning
+      environment without removing students’ personal belongings.
+      Phones are kept securely with students but remain inaccessible
+      during school hours, encouraging responsibility and healthy
+      digital boundaries.<br><br>
 
-    Without mobile distractions, classrooms become calmer and more focused.
-    Students engage more actively, participate fully, and experience
-    reduced anxiety linked to excessive screen use and social media.<br><br>
+      Without mobile distractions, classrooms become calmer and more focused.
+      Students engage more actively, participate fully, and experience
+      reduced anxiety linked to excessive screen use and social media.<br><br>
 
-    Limiting phone access also strengthens social interaction,
-    allowing students to communicate face-to-face and develop
-    stronger interpersonal skills. At the same time, it enhances
-    safeguarding by reducing exposure to inappropriate content
-    and online risks.
-  </p>
+      Limiting phone access also strengthens social interaction,
+      allowing students to communicate face-to-face and develop
+      stronger interpersonal skills. At the same time, it enhances
+      safeguarding by reducing exposure to inappropriate content
+      and online risks.
+    </p>
+  </div>
+
+  <div class="lang lang-zh">
+    <h3>建立無手機學習環境的實用方案</h3>
+    <p>
+      Munio Pouch 是一項兼顧實用性與尊重學生需要的手機管理方案，
+      讓學生可把手機安全隨身攜帶，同時確保課堂期間無法使用，
+      有助培養自律及健康的數碼使用習慣。<br><br>
+
+      在無手機干擾的情況下，課堂更專注、秩序更穩定，
+      學生能更投入學習，亦可減少社交媒體帶來的情緒壓力。<br><br>
+
+      同時，限制手機使用可促進面對面交流，強化溝通與社交技巧，
+      並降低網絡欺凌、不當內容及私隱風險，提升校園安全。
+    </p>
+  </div>
 </section>
+
 <section class="section-soft2">
   <section class="section">
     <div class="grid">
       <div class="card">
-        <h3>Improved Focus</h3>
-        <p>Fewer distractions and a calmer learning environment.</p>
+        <h3 class="lang lang-en">Improved Focus</h3>
+        <h3 class="lang lang-zh">提升專注力</h3>
+        <p class="lang lang-en">Fewer distractions and a calmer learning environment.</p>
+        <p class="lang lang-zh">課堂干擾減少，學習氣氛更穩定寧靜。</p>
       </div>
 
       <div class="card">
-        <h3>Better Wellbeing</h3>
-        <p>Reduced stress from constant connectivity and social media.</p>
+        <h3 class="lang lang-en">Better Wellbeing</h3>
+        <h3 class="lang lang-zh">減少壓力</h3>
+        <p class="lang lang-en">Reduced stress from constant connectivity and social media.</p>
+        <p class="lang lang-zh">減少長時間連線與社交媒體帶來的情緒壓力。</p>
       </div>
 
       <div class="card">
-        <h3>Stronger Social Connections</h3>
-        <p>More face-to-face interaction between students.</p>
+        <h3 class="lang lang-en">Stronger Social Connections</h3>
+        <h3 class="lang lang-zh">促進社交互動</h3>
+        <p class="lang lang-en">More face-to-face interaction between students.</p>
+        <p class="lang lang-zh">學生更願意進行面對面交流，建立健康同儕關係。</p>
       </div>
 
       <div class="card">
-        <h3>Safer School Environment</h3>
-        <p>Lower risk of cyberbullying, misuse, and privacy concerns.</p>
+        <h3 class="lang lang-en">Safer School Environment</h3>
+        <h3 class="lang lang-zh">提升校園安全</h3>
+        <p class="lang lang-en">Lower risk of cyberbullying, misuse, and privacy concerns.</p>
+        <p class="lang lang-zh">降低網絡欺凌、不當拍攝及私隱外洩風險。</p>
       </div>
     </div>
   </section>
@@ -138,26 +216,49 @@
 
 <!-- ================= HOW IT WORKS ================= -->
 <section class="section" id="how">
-  <h2>How Munio Pouch Works</h2>
+  <h2 class="lang lang-en">How Munio Pouch Works</h2>
+  <h2 class="lang lang-zh">運作方式</h2>
+
   <section class="section">
-    <h2>A Calm, Phone-Free Classroom Without Centralised Phone Collection</h2>
-    <p>
+    <h2 class="lang lang-en">A Calm, Phone-Free Classroom Without Centralised Phone Collection</h2>
+    <h2 class="lang lang-zh">無需統一收機，也能建立專注的無手機課室</h2>
+
+    <p class="lang lang-en">
       Munio Pouch introduces a simple daily routine for students:<br>
       Phones go in, the pouch locks, and learning begins.<br><br>
       A respectful way to keep students’ phones safely with them while ensuring
       they remain inaccessible during lessons, balancing focus and respect.
     </p>
+
+    <p class="lang lang-zh">
+      Munio Pouch 為學生建立一個簡單而清晰的日常流程：<br>
+      手機放入袋內、鎖上、安心學習。<br><br>
+      學生仍可將手機安全隨身攜帶，但於上課期間無法使用，
+      在尊重私人物品的同時有效減少干擾。
+    </p>
   </section>
-  <h1>All Mobile Phones and Connected Devices Should Keep in a Munio Pouch</h1>
-  <p>To ensure consistent implementation, all phones and connectable devices should managed in the following way.</p>
+
+  <h1 class="lang lang-en">All Mobile Phones and Connected Devices Should Be Kept in a Munio Pouch</h1>
+  <h1 class="lang lang-zh">所有手機及連接裝置必須存放於 Munio Pouch</h1>
+
+  <p class="lang lang-en">To ensure consistent implementation, all phones and connectable devices should be managed in the following way.</p>
+  <p class="lang lang-zh">為確保政策有效推行，所有手機及可連接的電子裝置均須按以下方式管理。</p>
 
   <div class="grid">
     <div>
-      <p>This includes phones, smartwatches, Bluetooth earphones, earbuds, and other connectable devices.</p>
-      <ol>
+      <p class="lang lang-en">This includes phones, smartwatches, Bluetooth earphones, earbuds, and other connectable devices.</p>
+      <p class="lang lang-zh">包括但不限於：手機、智能手錶、藍牙耳機、耳塞及其他可連接裝置。</p>
+
+      <ol class="lang lang-en">
         <li>Upon arrival, students place devices in the Munio Pouch and lock it.</li>
         <li>The pouch remains locked for the entire school day.</li>
         <li>Before dismissal, students unlock at the designated unlocking station.</li>
+      </ol>
+
+      <ol class="lang lang-zh">
+        <li>學生到校後，必須即時將裝置放入 Munio Pouch 並鎖上。</li>
+        <li>Munio Pouch 須於整個上課期間保持鎖定狀態。</li>
+        <li>放學前，學生可於指定解鎖站解鎖並取回裝置。</li>
       </ol>
     </div>
   </div>
@@ -165,22 +266,27 @@
   <div class="steps-box">
     <div class="grid">
       <div>
-        <h3 class="steps-title">Step-by-step</h3>
+        <h3 class="steps-title lang lang-en">Step-by-step</h3>
+        <h3 class="steps-title lang lang-zh">手機袋的使用流程</h3>
 
         <div class="grid">
           <div class="card">
-            <p>On arrival, students place their mobile phone into their allocated pouch.</p>
+            <p class="lang lang-en">On arrival, students place their mobile phone into their allocated pouch.</p>
+            <p class="lang lang-zh">1) 學生到校後，把手機放入自己的專屬手機袋。</p>
             <img src="assets/step1.jpg" class="hero-animated-img" alt="Step 1">
           </div>
 
           <div class="card">
-            <p>Students close and secure the pouch, keeping it with them for the entire school day.</p>
+            <p class="lang lang-en">Students close and secure the pouch, keeping it with them for the entire school day.</p>
+            <p class="lang lang-zh">2) 學生把手機袋關好並鎖上，整個上課日保持隨身攜帶。</p>
             <img src="assets/step2.jpg" class="hero-animated-img" alt="Step 2">
           </div>
         </div>
 
         <div class="card">
-          <p>At the end of the day, students tap the pouch on the unlocking base to retrieve their phone.</p>
+          <p class="lang lang-en">At the end of the day, students tap the pouch on the unlocking base to retrieve their phone.</p>
+          <p class="lang lang-zh">3) 放學時，學生把手機袋在解鎖底座上輕觸一下，即可取回手機離校。</p>
+
           <div class="grid">
             <img src="assets/step3.jpg" class="hero-animated-img" alt="Unlock base">
             <img src="assets/handheld.jpg" class="hero-animated-img" alt="Handheld unlocker">
@@ -199,214 +305,354 @@
   </video>
 </div>
 
-<!-- ================= Q&A / POLICY + COMPARISON ================= -->
+<!-- ================= Q&A / POLICY ================= -->
 <section class="section" id="qa">
-  <h2>Mobile-Free School Policy</h2>
+  <h2 class="lang lang-en">Mobile-Free School Policy</h2>
+  <h2 class="lang lang-zh">無手機校園政策</h2>
   <br>
 
-  <h1>Policy Rationale</h1>
-  <p>
+  <h1 class="lang lang-en">Policy Rationale</h1>
+  <h1 class="lang lang-zh">政策理念</h1>
+
+  <p class="lang lang-en">
     The Mobile-Free School Policy aims to create a more focused and less distracting learning environment,
     responding to growing concerns within the global education community about the impact of mobile phone use on students.
   </p>
 
+  <p class="lang lang-zh">
+    無手機校園政策旨在營造更專注、少干擾的學習環境，
+    回應全球教育界對學生使用手機對學習與身心發展所帶來影響的關注。
+  </p>
+
   <div class="grid">
     <div>
-      <div class="bi-label">Key Considerations Include:</div>
-      <ol>
+      <div class="bi-label lang lang-en">Key Considerations Include:</div>
+      <div class="bi-label lang lang-zh">主要考慮因素包括：</div>
+
+      <ol class="lang lang-en">
         <li>Growing concern about constant contactability and frequent use of mobile technology.</li>
         <li>Over-dependence can affect social skills, emotional regulation, and academic performance (e.g. nomophobia).</li>
         <li>Phones add staff workload through conflict and discipline, reducing time for focused learning.</li>
       </ol>
+
+      <ol class="lang lang-zh">
+        <li>社會與學校愈來愈關注長期連線與頻繁使用手機對學習造成的影響。</li>
+        <li>過度依賴手機可能影響社交能力、情緒調節及學業表現。</li>
+        <li>手機亦會增加教職員處理衝突與紀律事件的負擔，影響專注學習。</li>
+      </ol>
     </div>
   </div>
 
-  <p>
+  <p class="lang lang-en">
     For these reasons, the Munio Pouch System is recommended. It allows students to keep their devices while preventing distraction during school hours.
+  </p>
+
+  <p class="lang lang-zh">
+    基於以上原因，建議採用 <strong>Munio Pouch 系統</strong>，
+    讓學生保留攜帶個人裝置的權利，同時有效避免課堂期間的干擾。
   </p>
 </section>
 
 <section class="faq-section">
-  <h2>Frequently Asked Questions (FAQ) from Parents</h2>
+  <h2 class="lang lang-en">Frequently Asked Questions (FAQ) from Parents</h2>
+  <h2 class="lang lang-zh">常見問題（FAQ）</h2>
 
   <div class="faq-grid">
     <div class="faq-card">
-      <h3>1. Can my child leave their phone in their schoolbag?</h3>
-      <p><strong>No.</strong><br>All devices must be placed inside the Munio Pouch to prevent use during lessons.</p>
+      <h3 class="lang lang-en">1. Can my child leave their phone in their schoolbag?</h3>
+      <h3 class="lang lang-zh">1. 孩子可否將手機放在書包內？</h3>
+      <p class="lang lang-en"><strong>No.</strong><br>All devices must be placed inside the Munio Pouch to prevent use during lessons.</p>
+      <p class="lang lang-zh"><strong>不可以。</strong><br>所有手機及可連接裝置必須存放於 Munio Pouch，以防止課堂期間使用。</p>
     </div>
 
     <div class="faq-card">
-      <h3>2. Can my child bring a phone for travelling to and from school?</h3>
-      <p><strong>Yes.</strong><br>Lock it immediately on arrival. Access only at dismissal.</p>
+      <h3 class="lang lang-en">2. Can my child bring a phone for travelling to and from school?</h3>
+      <h3 class="lang lang-zh">2. 孩子上下學需要手機，可以攜帶回校嗎？</h3>
+      <p class="lang lang-en"><strong>Yes.</strong><br>Lock it immediately on arrival. Access only at dismissal.</p>
+      <p class="lang lang-zh"><strong>可以。</strong><br>但到校後必須即時鎖入 Munio Pouch，並於放學時才可取回。</p>
     </div>
 
     <div class="faq-card">
-      <h3>3. Can I still track my child’s location?</h3>
-      <p><strong>Yes.</strong><br>Tracking works once the device is retrieved after school.</p>
+      <h3 class="lang lang-en">3. Can I still track my child’s location?</h3>
+      <h3 class="lang lang-zh">3. 我仍可追蹤孩子的位置嗎？</h3>
+      <p class="lang lang-en"><strong>Yes.</strong><br>Tracking works once the device is retrieved after school.</p>
+      <p class="lang lang-zh"><strong>可以。</strong><br>追蹤功能須於放學後取回裝置後方可使用。</p>
     </div>
 
     <div class="faq-card">
-      <h3>4. Does this apply to basic (non-smart) phones?</h3>
-      <p><strong>Yes.</strong><br>The policy applies to all phones and connectable devices.</p>
+      <h3 class="lang lang-en">4. Does this apply to basic (non-smart) phones?</h3>
+      <h3 class="lang lang-zh">4. 基本手機（非智能電話）是否適用？</h3>
+      <p class="lang lang-en"><strong>Yes.</strong><br>The policy applies to all phones and connectable devices.</p>
+      <p class="lang lang-zh"><strong>適用。</strong><br>本政策涵蓋所有類型的手機及可連接裝置。</p>
     </div>
 
     <div class="faq-card">
-      <h3>5. Do senior secondary students also need to use the Munio Pouch?</h3>
-      <p><strong>Yes.</strong><br>Only permitted in designated areas with teacher approval for learning purposes.</p>
+      <h3 class="lang lang-en">5. Do senior secondary students also need to use the Munio Pouch?</h3>
+      <h3 class="lang lang-zh">5. 高中學生是否亦須使用 Munio Pouch？</h3>
+      <p class="lang lang-en"><strong>Yes.</strong><br>Only permitted in designated areas with teacher approval for learning purposes.</p>
+      <p class="lang lang-zh"><strong>是。</strong><br>高中學生只可在老師批准及指定範圍內作學習用途，否則會作紀律處理。</p>
     </div>
 
     <div class="faq-card">
-      <h3>6. What if phones are required for a lesson?</h3>
-      <p>Teachers may use portable unlocking devices where necessary for learning activities.</p>
+      <h3 class="lang lang-en">6. What if phones are required for a lesson?</h3>
+      <h3 class="lang lang-zh">6. 若課堂需要使用手機，應如何處理？</h3>
+      <p class="lang lang-en">Teachers may use portable unlocking devices where necessary for learning activities.</p>
+      <p class="lang lang-zh">學校可提供便攜式解鎖裝置，由老師按教學需要為學生解鎖。</p>
     </div>
 
     <div class="faq-card">
-      <h3>7. Lost and Replacement Arrangements</h3>
-      <p>Replaced at parent’s expense; otherwise devices must be left at home</p>
+      <h3 class="lang lang-en">7. Lost and Replacement Arrangements</h3>
+      <h3 class="lang lang-zh">7. 遺失及補領安排</h3>
+      <p class="lang lang-en">Replaced at parent’s expense; otherwise devices must be left at home.</p>
+      <p class="lang lang-zh">補領費用由家長承擔；如不補領，相關裝置需留在家中。</p>
     </div>
   </div>
 </section>
 
 <section class="info-section">
-  <h2>About the Munio Pouch System</h2>
+  <h2 class="lang lang-en">About the Munio Pouch System</h2>
+  <h2 class="lang lang-zh">關於 Munio Pouch 系統</h2>
 
   <div class="info-grid">
     <div class="info-card">
-      <h3>1. What is the Munio Pouch?</h3>
-      <p>
+      <h3 class="lang lang-en">1. What is the Munio Pouch?</h3>
+      <h3 class="lang lang-zh">1. 甚麼是 Munio Pouch？</h3>
+
+      <p class="lang lang-en">
         The Munio Pouch is a lockable storage pouch that allows students to keep their
         phones with them while preventing access during lesson time.
       </p>
-      <p>
+      <p class="lang lang-en">
         This design reduces separation anxiety and avoids issues related to
         device storage or security.
+      </p>
+
+      <p class="lang lang-zh">
+        Munio Pouch 是可上鎖的手機保管袋，學生可隨身攜帶已鎖上的手機，
+        但於上課時間無法取用，減少干擾。
+      </p>
+      <p class="lang lang-zh">
+        這種設計可減少分離焦慮，同時避免集中存放帶來的保管及安全問題。
       </p>
     </div>
 
     <div class="info-card">
-      <h3>2. How does the magnetic lock work?</h3>
-      <p>
+      <h3 class="lang lang-en">2. How does the magnetic lock work?</h3>
+      <h3 class="lang lang-zh">2. 磁力解鎖如何運作？</h3>
+
+      <p class="lang lang-en">
         The pouch contains both a mechanical lock and a magnetic safety mechanism.
         Once the magnetic lock is engaged, it can only be opened using the school’s
         authorised unlocking devices.
       </p>
-      <p>
+      <p class="lang lang-en">
         The school will be equipped with both wall-mounted and handheld unlockers
         for convenience.
+      </p>
+
+      <p class="lang lang-zh">
+        手機袋具備機械鎖及磁力安全機制；一旦上鎖，只能使用學校授權的解鎖裝置打開。
+      </p>
+      <p class="lang lang-zh">
+        學校可配備固定式與手提式解鎖器，方便日常運作。
       </p>
     </div>
 
     <div class="info-card">
-      <h3>3. Will this cause queues during arrival or dismissal?</h3>
-      <p><strong>No.</strong></p>
-      <p>
+      <h3 class="lang lang-en">3. Will this cause queues during arrival or dismissal?</h3>
+      <h3 class="lang lang-zh">3. 會否在到校或放學造成排隊？</h3>
+
+      <p class="lang lang-en"><strong>No.</strong></p>
+      <p class="lang lang-en">
         Locking and unlocking procedures are very quick, and the school will provide
         sufficient unlocking stations to minimise waiting time.
+      </p>
+
+      <p class="lang lang-zh"><strong>不會。</strong></p>
+      <p class="lang lang-zh">
+        上鎖及解鎖流程非常快速，學校亦可設置足夠的解鎖站，以減少等候時間。
       </p>
     </div>
   </div>
 </section>
 
 <section class="info-section">
-  <h2>Management, Discipline and Special Arrangements</h2>
+  <h2 class="lang lang-en">Management, Discipline and Special Arrangements</h2>
+  <h2 class="lang lang-zh">管理、紀律與特別安排</h2>
 
   <div class="info-grid">
     <div class="info-card">
-      <h3>1. Students with SEN require phone access?</h3>
-      <p>
+      <h3 class="lang lang-en">1. Students with SEN require phone access?</h3>
+      <h3 class="lang lang-zh">1. SEN 學生如需使用手機怎麼辦？</h3>
+
+      <p class="lang lang-en">
         Parents may submit a request to the General Office.
         The school will assess the situation and make appropriate arrangements
         based on individual needs.
       </p>
+      <p class="lang lang-zh">
+        家長可向校務處提出申請，學校會按個別需要作評估及安排。
+      </p>
     </div>
 
     <div class="info-card">
-      <h3>2. If a Student Forgets Their Munio Pouch</h3>
-      <p>The device will be kept by staff during morning assembly.</p>
-      <p>The student must complete a detention session after school to retrieve the device.</p>
+      <h3 class="lang lang-en">2. If a Student Forgets Their Munio Pouch</h3>
+      <h3 class="lang lang-zh">2. 如學生忘記帶 Munio Pouch</h3>
+
+      <p class="lang lang-en">The device will be kept by staff during morning assembly.</p>
+      <p class="lang lang-en">The student must complete a detention session after school to retrieve the device.</p>
+
+      <p class="lang lang-zh">裝置會在早會時由教職員暫存保管。</p>
+      <p class="lang lang-zh">學生需在放學後完成留校／處理程序後才可取回裝置。</p>
     </div>
 
     <div class="info-card">
-      <h3>3. Unauthorised Device Use</h3>
-      <p><strong>Recommended measures include:</strong></p>
-      <ul>
+      <h3 class="lang lang-en">3. Unauthorised Device Use</h3>
+      <h3 class="lang lang-zh">3. 未經授權使用裝置</h3>
+
+      <p class="lang lang-en"><strong>Recommended measures include:</strong></p>
+      <ul class="lang lang-en">
         <li>The device will be confiscated immediately.</li>
         <li>The student must attend a disciplinary session at <strong>4:00pm</strong> on the same day.</li>
         <li>Parents must collect the device in person.</li>
         <li>Refusal to comply may result in further disciplinary action.</li>
       </ul>
+
+      <p class="lang lang-zh"><strong>建議處理方式：</strong></p>
+      <ul class="lang lang-zh">
+        <li>裝置會被即時收起。</li>
+        <li>學生需於同日 <strong>4:00pm</strong> 出席紀律處理／輔導。</li>
+        <li>家長需親自到校領回裝置。</li>
+        <li>如拒絕配合，可能會有進一步紀律處分。</li>
+      </ul>
     </div>
 
     <div class="info-card">
-      <h3>4. Ensuring Daily Compliance</h3>
-      <p>Teachers will remind students during the initial implementation phase.</p>
-      <p>The school may conduct random checks later, including schoolbag inspections.</p>
+      <h3 class="lang lang-en">4. Ensuring Daily Compliance</h3>
+      <h3 class="lang lang-zh">4. 確保日常遵從</h3>
+
+      <p class="lang lang-en">Teachers will remind students during the initial implementation phase.</p>
+      <p class="lang lang-en">The school may conduct random checks later, including schoolbag inspections.</p>
+
+      <p class="lang lang-zh">推行初期，老師會提醒學生遵從安排。</p>
+      <p class="lang lang-zh">其後學校可按需要進行抽查（例如書包檢查）。</p>
     </div>
 
     <div class="info-card">
-      <h3>5. Parent–Student Communication</h3>
-      <p>Parents may contact the General Office, where staff will relay messages to students.</p>
-      <p>Students who need to contact parents may seek assistance from the General Office during break or lunchtime.</p>
+      <h3 class="lang lang-en">5. Parent–Student Communication</h3>
+      <h3 class="lang lang-zh">5. 家長與學生通訊</h3>
+
+      <p class="lang lang-en">Parents may contact the General Office, where staff will relay messages to students.</p>
+      <p class="lang lang-en">Students who need to contact parents may seek assistance from the General Office during break or lunchtime.</p>
+
+      <p class="lang lang-zh">家長可聯絡校務處，由職員代為轉達訊息。</p>
+      <p class="lang lang-zh">學生如需聯絡家長，可於小息／午膳時間到校務處尋求協助。</p>
     </div>
 
     <div class="info-card">
-      <h3>6. Emergency Situations</h3>
-      <p>Emergency procedures will operate as usual, with staff prioritising student safety.</p>
-      <p>Restricting phones reduces the risk of parents receiving unverified information that may cause unnecessary panic.</p>
+      <h3 class="lang lang-en">6. Emergency Situations</h3>
+      <h3 class="lang lang-zh">6. 緊急情況</h3>
+
+      <p class="lang lang-en">Emergency procedures will operate as usual, with staff prioritising student safety.</p>
+      <p class="lang lang-en">Restricting phones reduces the risk of parents receiving unverified information that may cause unnecessary panic.</p>
+
+      <p class="lang lang-zh">緊急應變程序一切照常，教職員會以學生安全為首要。</p>
+      <p class="lang lang-zh">限制手機可減少家長收到未經核實訊息而引起不必要恐慌的風險。</p>
     </div>
 
     <div class="info-card">
-      <h3>7. Trips and Off-Campus Activities</h3>
-      <p>
+      <h3 class="lang lang-en">7. Trips and Off-Campus Activities</h3>
+      <h3 class="lang lang-zh">7. 外出活動</h3>
+
+      <p class="lang lang-en">
         The teacher-in-charge will decide, based on risk assessment,
         whether Munio Pouches are required for the activity.
+      </p>
+
+      <p class="lang lang-zh">
+        負責老師會按風險評估決定該活動是否需要使用 Munio Pouch。
       </p>
     </div>
   </div>
 </section>
 
 <section class="section">
-  <h2>Mobile Pouch vs Mobile Locker</h2>
+  <h2 class="lang lang-en">Mobile Pouch vs Mobile Locker</h2>
+  <h2 class="lang lang-zh">手機袋 vs 手機鎖櫃</h2>
 
   <div class="table-wrap">
     <table>
       <thead>
         <tr>
-          <th style="width:28%;">Category</th>
-          <th style="width:36%;">Mobile Pouch</th>
-          <th style="width:36%;">Mobile Locker</th>
+          <th style="width:28%;" class="lang lang-en">Category</th>
+          <th style="width:36%;" class="lang lang-en">Mobile Pouch</th>
+          <th style="width:36%;" class="lang lang-en">Mobile Locker</th>
+
+          <th style="width:28%;" class="lang lang-zh">類別</th>
+          <th style="width:36%;" class="lang lang-zh">手機袋</th>
+          <th style="width:36%;" class="lang lang-zh">手機鎖櫃</th>
         </tr>
       </thead>
+
       <tbody>
         <tr>
-          <td>🔒 Privacy</td>
-          <td>Students keep phones sealed; no staff handling</td>
-          <td>Lower: staff collect/store devices</td>
+          <td class="lang lang-en">🔒 Privacy</td>
+          <td class="lang lang-en">Students keep phones sealed; no staff handling</td>
+          <td class="lang lang-en">Lower: staff collect/store devices</td>
+
+          <td class="lang lang-zh">🔒 私隱</td>
+          <td class="lang lang-zh">手機由學生自行密封隨身攜帶，教職員無需接觸</td>
+          <td class="lang lang-zh">學校需集中收取、處理及存放</td>
         </tr>
+
         <tr>
-          <td>🙋 Responsibility</td>
-          <td>Student-managed; reduces conflict</td>
-          <td>Shifts responsibility to school</td>
+          <td class="lang lang-en">🙋 Responsibility</td>
+          <td class="lang lang-en">Student-managed; reduces conflict</td>
+          <td class="lang lang-en">Shifts responsibility to school</td>
+
+          <td class="lang lang-zh">🙋 責任感</td>
+          <td class="lang lang-zh">學生自行管理，減少衝突並建立信任</td>
+          <td class="lang lang-zh">責任轉移至學校，較易引起爭議</td>
         </tr>
+
         <tr>
-          <td>📄 Admin Workload</td>
-          <td>No daily collection/return</td>
-          <td>High: collect, label, store, return</td>
+          <td class="lang lang-en">📄 Admin Workload</td>
+          <td class="lang lang-en">No daily collection/return</td>
+          <td class="lang lang-en">High: collect, label, store, return</td>
+
+          <td class="lang lang-zh">📄 行政工作量</td>
+          <td class="lang lang-zh">無需每日收集及派發</td>
+          <td class="lang lang-zh">需收集、標記、存放及派發</td>
         </tr>
+
         <tr>
-          <td>⚠️ Loss / Damage Risk</td>
-          <td>Phone stays with student</td>
-          <td>Higher risk of mix-up/loss/damage</td>
+          <td class="lang lang-en">⚠️ Loss / Damage Risk</td>
+          <td class="lang lang-en">Phone stays with student</td>
+          <td class="lang lang-en">Higher risk of mix-up/loss/damage</td>
+
+          <td class="lang lang-zh">⚠️ 遺失／損壞風險</td>
+          <td class="lang lang-zh">手機全日由學生保管，降低風險</td>
+          <td class="lang lang-zh">集中存放較易調亂、遺失或損壞</td>
         </tr>
+
         <tr>
-          <td>⛑️ Emergency Readiness</td>
-          <td>On student (inaccessible, but available if needed)</td>
-          <td>Not on student (requires retrieval)</td>
+          <td class="lang lang-en">⛑️ Emergency Readiness</td>
+          <td class="lang lang-en">On student (inaccessible, but available if needed)</td>
+          <td class="lang lang-en">Not on student (requires retrieval)</td>
+
+          <td class="lang lang-zh">⛑️ 緊急應變</td>
+          <td class="lang lang-zh">手機在學生身上，學校可按需要處理</td>
+          <td class="lang lang-zh">需額外程序取回</td>
         </tr>
+
         <tr>
-          <td>💰 Cost</td>
-          <td>Parent purchase; minimal school equipment</td>
-          <td>Locker purchase + installation + maintenance</td>
+          <td class="lang lang-en">💰 Cost</td>
+          <td class="lang lang-en">Parent purchase; minimal school equipment</td>
+          <td class="lang lang-en">Locker purchase + installation + maintenance</td>
+
+          <td class="lang lang-zh">💰 費用</td>
+          <td class="lang lang-zh">由家長購買；學校一般無需額外設備</td>
+          <td class="lang lang-zh">需購買、安裝及維護，成本較高</td>
         </tr>
       </tbody>
     </table>
@@ -415,50 +661,78 @@
 
 <!-- ================= RESOURCES ================= -->
 <section class="section" id="resources">
-  <h2>Resources &amp; Downloads</h2>
+  <h2 class="lang lang-en">Resources &amp; Downloads</h2>
+  <h2 class="lang lang-zh">下載資源（學校／家長／教師）</h2>
 
   <div class="card">
-    <h3>Parent Survey Template</h3>
-    <p>Survey for collecting parent feedback on mobile-free school arrangements.</p>
+    <h3 class="lang lang-en">Parent Survey Template</h3>
+    <h3 class="lang lang-zh">家長問卷（範本）</h3>
+
+    <p class="lang lang-en">Survey for collecting parent feedback on mobile-free school arrangements.</p>
+    <p class="lang lang-zh">用於收集家長對「無手機校園」安排的意見。</p>
+
     <p style="margin-top:12px;">
-      <a class="btn-primary" href="MobilePouch-Survey-WordFormat-21112025.docx">Download Document</a>
+      <a class="btn-primary" href="MobilePouch-Survey-WordFormat-21112025.docx">
+        <span class="lang lang-en">Download Document</span>
+        <span class="lang lang-zh">下載文件</span>
+      </a>
     </p>
   </div>
 
   <br>
 
-  <h3>Roll Out for Mobile-Free School Arrangements</h3>
+  <h3 class="lang lang-en">Roll Out for Mobile-Free School Arrangements</h3>
+  <h3 class="lang lang-zh">校內無手機計劃通知</h3>
+
   <div class="grid">
     <div class="card">
-      <h3>English Version</h3>
+      <h3 class="lang lang-en">English Version</h3>
+      <h3 class="lang lang-zh">英文版本</h3>
       <p style="margin-top:12px;">
-        <a class="btn-primary" href="Rollout_Plan_Eng.docx">Download Document</a>
+        <a class="btn-primary" href="Rollout_Plan_Eng.docx">
+          <span class="lang lang-en">Download Document</span>
+          <span class="lang lang-zh">下載文件</span>
+        </a>
       </p>
     </div>
 
     <div class="card">
-      <h3>Chinese Version</h3>
+      <h3 class="lang lang-en">Chinese Version</h3>
+      <h3 class="lang lang-zh">中文版本</h3>
       <p style="margin-top:12px;">
-        <a class="btn-primary" href="Rollout_Plan_Chinese.docx">Download Document</a>
+        <a class="btn-primary" href="Rollout_Plan_Chinese.docx">
+          <span class="lang lang-en">Download Document</span>
+          <span class="lang lang-zh">下載文件</span>
+        </a>
       </p>
     </div>
   </div>
 
   <br>
 
-  <h3>Parents Agreement for Mobile-Free School Arrangements</h3>
+  <h3 class="lang lang-en">Parents Agreement for Mobile-Free School Arrangements</h3>
+  <h3 class="lang lang-zh">校內無手機計劃家長通告</h3>
+
   <div class="grid">
     <div class="card">
-      <h3>English Version</h3>
+      <h3 class="lang lang-en">English Version</h3>
+      <h3 class="lang lang-zh">英文版本</h3>
       <p style="margin-top:12px;">
-        <a class="btn-primary" href="Parent_Agreement_Eng.docx">Download Document</a>
+        <a class="btn-primary" href="Parent_Agreement_Eng.docx">
+          <span class="lang lang-en">Download Document</span>
+          <span class="lang lang-zh">下載文件</span>
+        </a>
       </p>
     </div>
 
     <div class="card">
-      <h3>Chinese Version</h3>
+      <h3 class="lang lang-en">Chinese Version</h3>
+      <h3 class="lang lang-zh">中文版本</h3>
       <p style="margin-top:12px;">
-        <a class="btn-primary" href="Parent_Agreement_Chinese.docx">Download Document</a>
+        <a class="btn-primary" href="Parent_Agreement_Chinese.docx">
+          <span class="lang lang-en">Download Document</span>
+          <span class="lang lang-zh">下載文件</span>
+        </a>
       </p>
     </div>
   </div>
@@ -467,75 +741,116 @@
 <!-- ================= GLOBAL TREND ================= -->
 <section class="section-soft3" id="global">
   <div class="section">
-    <h1>Global Trend</h1>
-    <p>Many regions have already adopted phone-free school policies.</p>
-    <ul>
+    <h1 class="lang lang-en">Global Trend</h1>
+    <h1 class="lang lang-zh">國際趨勢</h1>
+
+    <p class="lang lang-en">Many regions have already adopted phone-free school policies.</p>
+    <p class="lang lang-zh">不少地區已採用無手機校園政策。</p>
+
+    <ul class="lang lang-en">
       <li>China, Netherlands, Finland and Italy</li>
       <li>Hundreds of US and UK schools</li>
       <li>France (national ban for students under 15)</li>
     </ul>
+
+    <ul class="lang lang-zh">
+      <li>中國、荷蘭、芬蘭及意大利</li>
+      <li>美國及英國數百間學校</li>
+      <li>法國（15歲以下學生全國性禁令）</li>
+    </ul>
   </div>
 </section>
+
 <section class="section">
   <div>
-    <p>
+    <p class="lang lang-en">
       Reported outcomes of these policies include improved student behaviour,
       better academic focus, and reduced stress levels.
+    </p>
+    <p class="lang lang-zh">
+      相關政策的成效包括：改善學生行為、提升學習專注度，以及減輕壓力。
     </p>
 
     <div class="stat">
       <img src="assets/gem.jpg" alt="Percentage of education systems banning smartphone use in schools">
-      <p class="stat-caption">
-        Percentage of education systems with laws and policies banning smartphone use
-        in school, by SDG region, end of 2024.
+      <p class="stat-caption lang lang-en">
+        Percentage of education systems with laws and policies banning smartphone use in school, by SDG region, end of 2024.
+      </p>
+      <p class="stat-caption lang lang-zh">
+        截至 2024 年底，各 SDG 地區教育體系訂立禁止在校使用智能手機法律與政策的比例。
       </p>
     </div>
 
-    <p>
+    <p class="lang lang-en">
       Source: GEM Report PEER profiles,
       <a href="https://www.education-profiles.org" target="_blank" rel="noopener">education-profiles.org</a>
     </p>
+    <p class="lang lang-zh">
+      資料來源：GEM Report PEER profiles，
+      <a href="https://www.education-profiles.org" target="_blank" rel="noopener">education-profiles.org</a>
+    </p>
 
-    <h2>China</h2>
-    <p>
+    <h2 class="lang lang-en">China</h2>
+    <h2 class="lang lang-zh">中國</h2>
+    <p class="lang lang-en">
       China’s Ministry of Education states that primary and secondary students should not bring mobile phones to school,
       and any exception requires written parental consent; even with consent, phones must be handed over and may not be used
       during school hours. The policy aims to reduce distraction, protect students’ eyesight and wellbeing, and improve focus in class.
     </p>
-    <p>Source: Ministry of Education of the People’s Republic of China</p>
+    <p class="lang lang-zh">
+      中國教育部指出，中小學生原則上不應攜帶手機到校；如有需要，須取得家長書面同意。
+      即使獲批准，手機亦需交由學校保管，上課期間不得使用。政策旨在減少干擾、保護視力與身心健康，提升課堂專注。
+    </p>
 
-    <h2>United Kingdom</h2>
-    <p>
+    <h2 class="lang lang-en">United Kingdom</h2>
+    <h2 class="lang lang-zh">英國</h2>
+    <p class="lang lang-en">
       Secondary schools with an effective mobile-phone ban were more than twice as likely to be rated ‘Outstanding’
       by Ofsted, and their students achieved GCSE results equivalent to 1–2 grades higher (Progress 8 +0.13 to +0.25).
       Although the report does not claim causation, it finds a clear correlation between strong phone-free policies and better school performance.
     </p>
-    <p>Source: Policy Exchange (2024), “Disconnect”</p>
+    <p class="lang lang-zh">
+      有效推行禁用手機政策的中學，被 Ofsted 評為「卓越（Outstanding）」的機會超過兩倍；
+      學生 GCSE 成績亦相當於提高 1–2 個等級（Progress 8 約 +0.13 至 +0.25）。
+      報告並未聲稱因果關係，但指出嚴謹的無手機政策與更佳校務表現有明顯相關。
+    </p>
 
-    <h2>Hong Kong</h2>
-    <p>
+    <h2 class="lang lang-en">Hong Kong</h2>
+    <h2 class="lang lang-zh">香港</h2>
+    <p class="lang lang-en">
       Look Up Hong Kong states that delaying children’s access to smartphones and social media protects their mental and physical wellbeing,
       allowing them to grow up with fewer digital distractions, richer real-world relationships, and stronger curiosity and creativity.
       Their survey shows strong public support: 87% of parents would delay smartphones until at least age 14, 94% support setting social-media
       age limits at 16, and 92% would choose a smartphone-free school for their children.
     </p>
-    <p>Source: Look Up Hong Kong</p>
+    <p class="lang lang-zh">
+      Look Up Hong Kong 指出，延後孩子接觸智能手機及社交媒體可保障身心健康，
+      讓孩子在較少數碼干擾下成長，建立更豐富的真實關係與好奇心、創造力。
+      其調查亦顯示高度支持：87% 家長願把智能手機延至至少 14 歲，94% 支持把社交媒體年齡限制設為 16 歲，
+      92% 會為子女選擇無手機學校。
+    </p>
 
-    <h2>Singapore</h2>
-    <p>
+    <h2 class="lang lang-en">Singapore</h2>
+    <h2 class="lang lang-zh">新加坡</h2>
+    <p class="lang lang-en">
       Singapore is tightening rules on student smartphone use in secondary schools from 2026, requiring devices to remain locked away throughout the school day,
       including recess and some other activities, with exceptions where necessary.
     </p>
-    <p>Source: Singapore Ministry of Education, 30 November 2025</p>
+    <p class="lang lang-zh">
+      新加坡將於 2026 年起收緊中學生使用手機及智能手錶的規定，要求裝置於整個上課日保持收起，
+      包括小息及部分活動；學校可在有需要時作例外安排。
+    </p>
   </div>
 </section>
 
 <!-- ================= CONTACT ================= -->
 <section class="section section-soft4" id="contact">
-  <h2>Contact &amp; Demo Request</h2>
+  <h2 class="lang lang-en">Contact &amp; Demo Request</h2>
+  <h2 class="lang lang-zh">聯絡我們 及 示範查詢</h2>
 
   <div class="form-wrap">
-    <h2>Your Details</h2>
+    <h2 class="lang lang-en">Your Details</h2>
+    <h2 class="lang lang-zh">你的資料</h2>
 
     <form id="contactForm">
       <!-- Honeypot (anti-spam) -->
@@ -543,39 +858,45 @@
 
       <div class="form-row">
         <div>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <label for="name" class="lang lang-en">Name</label>
+          <label for="name" class="lang lang-zh">姓名</label>
+          <input type="text" id="name" name="name" placeholder="Your name / 請輸入姓名" required>
         </div>
         <div>
-          <label for="role">Role</label>
-          <input type="text" id="role" name="role" placeholder="Principal / Teacher / Admin">
+          <label for="role" class="lang lang-en">Role</label>
+          <label for="role" class="lang lang-zh">職位</label>
+          <input type="text" id="role" name="role" placeholder="Principal / Teacher / Admin / 校長／老師／行政">
         </div>
       </div>
 
       <div class="form-row" style="margin-top: 12px;">
         <div>
-          <label for="school">School</label>
-          <input type="text" id="school" name="school" placeholder="School name">
+          <label for="school" class="lang lang-en">School</label>
+          <label for="school" class="lang lang-zh">機構名稱</label>
+          <input type="text" id="school" name="school" placeholder="School name / 學校／機構名稱">
         </div>
         <div>
-          <label for="email">Email</label>
+          <label for="email" class="lang lang-en">Email</label>
+          <label for="email" class="lang lang-zh">電郵</label>
           <input type="email" id="email" name="email" placeholder="name@example.com" required>
         </div>
       </div>
 
       <div class="form-row" style="margin-top: 12px;">
         <div>
-          <label for="phone">Phone</label>
+          <label for="phone" class="lang lang-en">Phone</label>
+          <label for="phone" class="lang lang-zh">聯絡電話</label>
           <input type="text" id="phone" name="phone" placeholder="+852 ...">
         </div>
         <div>
-          <label for="lang">Preferred language</label>
-          <!-- FIX: values consistent (en/zh/both) -->
+          <label for="lang" class="lang lang-en">Preferred language</label>
+          <label for="lang" class="lang lang-zh">首選語言</label>
           <select id="lang" name="lang">
-            <option value="">Please select</option>
+            <option value="" class="lang lang-en">Please select</option>
+            <option value="" class="lang lang-zh">請選擇</option>
             <option value="en">English</option>
-            <option value="zh">Traditional Chinese</option>
-            <option value="both">English + Chinese</option>
+            <option value="zh">繁體中文</option>
+            <option value="both">English + 中文</option>
           </select>
         </div>
       </div>
@@ -583,49 +904,65 @@
       <br>
 
       <div class="form-row" style="margin-top: 16px;">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="e.g. Number of students, preferred start date, any specific needs"></textarea>
+        <label for="message" class="lang lang-en">Message</label>
+        <label for="message" class="lang lang-zh">查詢內容</label>
+        <textarea id="message" name="message" placeholder="e.g. Number of students, preferred start date, any specific needs / 例如：學生人數、預計推行日期、任何特定需要"></textarea>
       </div>
 
       <br>
 
       <div class="checkbox-row">
         <input type="checkbox" id="demo" name="demo">
-        <label for="demo">I would like to arrange an on-site / online demonstration.</label>
+        <label for="demo" class="lang lang-en">I would like to arrange an on-site / online demonstration.</label>
+        <label for="demo" class="lang lang-zh">希望安排到校或網上示範。</label>
       </div>
 
       <br>
 
       <div class="form-footer">
-        <button type="submit" class="btn-primary" id="submitBtn">Send Enquiry</button>
+        <button type="submit" class="btn-primary" id="submitBtn">
+          <span class="lang lang-en">Send Enquiry</span>
+          <span class="lang lang-zh">提交查詢</span>
+        </button>
       </div>
     </form>
   </div>
 
   <div class="info-card">
-    <!-- FIX: properly closed h1 -->
-    <div class="title"><h1>Our Information</h1></div>
+    <div class="title">
+      <h1 class="lang lang-en">Our Information</h1>
+      <h1 class="lang lang-zh">聯絡資料</h1>
+    </div>
+
     <h2><img src="assets/Logo.jpg" alt="Creative Spot" width="250" style="height:auto;"></h2>
-    <h2>Creative Spot Learning Materials Ltd.</h2>
+
+    <h2 class="lang lang-en">Creative Spot Learning Materials Ltd.</h2>
+    <h2 class="lang lang-zh">Creative Spot Learning Materials Ltd.</h2>
 
     <div class="section contact-info-grid">
       <div class="contact-item">
-        <h3>Address</h3>
-        <p>Unit 18, 14/F Vanta Industrial Centre, No.21–33 Tai Lin Pai Road, Kwai Chung NT</p>
+        <h3 class="lang lang-en">Address</h3>
+        <h3 class="lang lang-zh">地址</h3>
+        <p class="lang lang-en">Unit 18, 14/F Vanta Industrial Centre, No.21–33 Tai Lin Pai Road, Kwai Chung NT</p>
+        <p class="lang lang-zh">香港新界葵興大連排道21-33號宏達工業中心14樓18室</p>
       </div>
 
       <div class="contact-item">
-        <h3>Telephone / Fax</h3>
-        <p>(+852) 3422 8725 / (+852) 277706060</p>
+        <h3 class="lang lang-en">Telephone / Fax</h3>
+        <h3 class="lang lang-zh">電話／傳真</h3>
+        <p class="lang lang-en">(+852) 3422 8725 / (+852) 277706060</p>
+        <p class="lang lang-zh">(+852) 2780 9951 / 3175 0608（電話）<br>(+852) 2770 6060（傳真）</p>
       </div>
 
       <div class="contact-item">
-        <h3>Website</h3>
+        <h3 class="lang lang-en">Website</h3>
+        <h3 class="lang lang-zh">網站</h3>
         <p><a href="http://www.creativespot.com.hk" target="_blank" rel="noopener">www.creativespot.com.hk</a></p>
       </div>
 
       <div class="contact-item">
-        <h3>Email</h3>
+        <h3 class="lang lang-en">Email</h3>
+        <h3 class="lang lang-zh">電郵</h3>
         <p>info@creativespot.com.hk</p>
       </div>
     </div>
@@ -635,31 +972,38 @@
 <!-- ================= THANK YOU POPUP ================= -->
 <div id="thanksModal" class="modal-overlay" aria-hidden="true">
   <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="thanksTitle">
-    <h2 id="thanksTitle">Thanks for the enquiry!</h2>
-    <p>We’ve received your message and will get back to you soon.</p>
-    <button type="button" id="closeThanks" class="btn-primary">Close</button>
+    <h2 id="thanksTitle" class="lang lang-en">Thanks for the enquiry!</h2>
+    <h2 class="lang lang-zh">多謝你的查詢！</h2>
+
+    <p class="lang lang-en">We’ve received your message and will get back to you soon.</p>
+    <p class="lang lang-zh">我們已收到你的訊息，將盡快回覆。</p>
+
+    <button type="button" id="closeThanks" class="btn-primary">
+      <span class="lang lang-en">Close</span>
+      <span class="lang lang-zh">關閉</span>
+    </button>
   </div>
 </div>
 
 <!-- ================= FOOTER ================= -->
 <footer>
-  Munio Pouch — Creative Spot Learning Materials Ltd<br>
-  © 2025 Creative Spot. All Rights Reserved.
+  <span class="lang lang-en">Munio Pouch — Creative Spot Learning Materials Ltd<br>© 2025 Creative Spot. All Rights Reserved.</span>
+  <span class="lang lang-zh">Munio Pouch — Creative Spot Learning Materials Ltd<br>© 2025 Creative Spot 版權所有</span>
 </footer>
 
 <!-- ================= SCRIPTS ================= -->
 <script>
-  // Hero shrink animation
+  // ================= Hero shrink animation =================
   window.addEventListener("scroll", function () {
     const hero = document.querySelector(".hero-animated");
     if (!hero) return;
-
     if (window.scrollY > 125) hero.classList.add("hero-shrink");
     else hero.classList.remove("hero-shrink");
   });
 
-  // Highlight active nav link based on section in view
+  // ================= Active nav highlight =================
   const navLinks = Array.from(document.querySelectorAll(".nav-right .nav-link"))
+    .filter(a => a.tagName.toLowerCase() === "a")
     .filter(a => a.getAttribute("href") && a.getAttribute("href").startsWith("#"));
 
   const sections = navLinks
@@ -679,7 +1023,7 @@
   window.addEventListener("scroll", setActive);
   window.addEventListener("load", setActive);
 
-  // Thank-you modal
+  // ================= Thank-you modal =================
   const form = document.getElementById("contactForm");
   const thanksModal = document.getElementById("thanksModal");
   const closeThanks = document.getElementById("closeThanks");
@@ -704,14 +1048,13 @@
     if (e.key === "Escape") closeThanksModal();
   });
 
-  // Submit to Google Apps Script (Sheets)
+  // ================= Submit to Google Apps Script (Sheets) =================
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    // Prevent double submits
     submitBtn.disabled = true;
-    const oldText = submitBtn.textContent;
-    submitBtn.textContent = "Sending...";
+    const oldHTML = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<span class="lang lang-en">Sending...</span><span class="lang lang-zh">傳送中...</span>';
 
     const data = new FormData(form);
 
@@ -728,9 +1071,45 @@
       console.error(err);
     } finally {
       submitBtn.disabled = false;
-      submitBtn.textContent = oldText;
+      submitBtn.innerHTML = oldHTML;
+      applyLang(getLang()); // re-apply language after button text restore
     }
   });
+
+  // ================= Language toggle =================
+  const langToggle = document.getElementById("langToggle");
+
+  function getLang() {
+    return document.documentElement.getAttribute("data-lang") || "en";
+  }
+
+  function applyLang(lang) {
+    document.documentElement.setAttribute("data-lang", lang);
+    document.documentElement.setAttribute("lang", lang === "zh" ? "zh-HK" : "en");
+
+    // Update nav anchor labels using data-en/data-zh
+    document.querySelectorAll(".nav-right a.nav-link[data-en][data-zh]").forEach(a => {
+      a.textContent = (lang === "zh") ? a.getAttribute("data-zh") : a.getAttribute("data-en");
+    });
+
+    // Toggle button text
+    if (langToggle) langToggle.textContent = (lang === "zh") ? "ENG" : "中文";
+
+    // Save
+    localStorage.setItem("site_lang", lang);
+  }
+
+  // init language
+  const saved = localStorage.getItem("site_lang");
+  applyLang(saved === "zh" ? "zh" : "en");
+
+  // toggle click
+  if (langToggle) {
+    langToggle.addEventListener("click", () => {
+      const current = getLang();
+      applyLang(current === "en" ? "zh" : "en");
+    });
+  }
 </script>
 
 </body>
