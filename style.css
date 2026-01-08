@@ -814,3 +814,63 @@ textarea{
   .hero-animated-text h1{ font-size: 64px; }
   .hero-shrink .hero-animated-text h1{ font-size: 48px; }
 }
+/* ================= SOCIAL MEDIA ================= */
+
+.social-block{
+  margin-top: 60px;
+  text-align: center;
+}
+
+.social-links{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.social-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 22px;
+  border-radius: 999px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  background: #fff;
+  color: var(--primary);
+
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-soft);
+
+  transition: all 0.25s ease;
+}
+
+.social-btn svg{
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* Hover */
+.social-btn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+/* Brand colors (subtle) */
+.social-btn.fb:hover{ color:#1877F2; }
+.social-btn.ig:hover{ color:#E1306C; }
+.social-btn.yt:hover{ color:#FF0000; }
+.social-btn.wa:hover{ color:#25D366; }
+
+
+/* Mobile */
+@media (max-width:700px){
+  .social-links{
+    gap: 12px;
+  }
+}
