@@ -468,7 +468,8 @@ html[data-lang="zh"] .lang-swap > .lang-en{
   border-left: 6px solid var(--secondary);
 }
 
-.card:nth-child(2){ border-left-color: #2E5A88; }
+.card:nth-child(1){ border-left-color: #514d8e; }
+.card:nth-child(2){ border-left-color: #42bdc3; }
 .card:nth-child(3){ border-left-color: #3D6FA6; }
 .card:nth-child(4){ border-left-color: #1F3A5F; }
 
