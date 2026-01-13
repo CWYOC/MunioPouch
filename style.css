@@ -274,6 +274,15 @@ html[data-lang="zh"] .lang-swap > .lang-en{
   border-radius: var(--radius-lg);
 }
 
+.hero-animated-img2{
+  width: 200px;
+  height: auto;
+  max-width: 90%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: var(--radius-lg);
+}
+
 /* HERO TEXT */
 .hero-animated-text{
   position: absolute;
