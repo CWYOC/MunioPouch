@@ -275,10 +275,12 @@ html[data-lang="zh"] .lang-swap > .lang-en{
 }
 
 .hero-animated-img2{
-  width: 200px;
+  width: clamp(240px, 38vw, 540px);
   height: auto;
-  max-width: 90%;
-  max-height: 70vh;
+
+  max-width: 95%;
+  max-height: 840px;
+
   object-fit: contain;
   border-radius: var(--radius-lg);
 }
@@ -824,6 +826,7 @@ textarea{
   .hero-animated-text h1{ font-size: 64px; }
   .hero-shrink .hero-animated-text h1{ font-size: 48px; }
 }
+
 /* ================= SOCIAL MEDIA ================= */
 
 .social-block{
@@ -877,10 +880,57 @@ textarea{
 .social-btn.yt:hover{ color:#FF0000; }
 .social-btn.wa:hover{ color:#25D366; }
 
-
 /* Mobile */
 @media (max-width:700px){
   .social-links{
     gap: 12px;
+  }
+}
+
+/* ===========================================================
+   HERO POSITION FIX (minimal override, keep your design)
+   Add this at the END so it overrides the hero rules above
+   =========================================================== */
+
+/* Fix mobile address-bar jump + keep hero height stable */
+.hero-animated{
+  height: calc(100dvh - 60px);
+  min-height: calc(100vh - 60px); /* fallback */
+}
+
+/* Keep hero text width stable across devices */
+.hero-animated-text{
+  width: min(820px, calc(100% - 48px));
+}
+
+/* Shrunk text: avoid hard-coded 65% drifting on different screens */
+.hero-shrink .hero-animated-text{
+  left: clamp(52%, 65%, 68%);
+  width: min(720px, calc(100% - 160px));
+}
+
+/* Shrunk image: avoid fixed 72px being too much/too little on devices */
+.hero-shrink .hero-animated-img-container{
+  left: clamp(18px, 5vw, 72px);
+}
+
+/* Remove the big margin jump that breaks layout on some devices */
+.hero-shrink{
+  margin-top: 350px;
+  transform: translateY(40px);
+}
+
+/* Mid screens: keep things centered if space is tight */
+@media (max-width: 900px){
+  .hero-shrink .hero-animated-text{
+    left: 50%;
+    width: min(820px, calc(100% - 48px));
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero-shrink .hero-animated-img-container{
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
