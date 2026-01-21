@@ -10,7 +10,7 @@
   --bg-soft:#F1F5F9;
 
   --bg-softer:#4155eb6b;
-  --bg-softer2:#0091528b;
+  --bg-softer2:#08ae429a;
   --bg-softer3:#9dd3ffb0;
   --bg-softer4:#b9c0f9a0;
 
@@ -279,7 +279,7 @@ html[data-lang="zh"] .lang-swap > .lang-en{
   height: auto;
 
   max-width: 95%;
-  max-height: 840px;
+  max-height: 560px;
 
   object-fit: contain;
   border-radius: var(--radius-lg);
@@ -310,7 +310,7 @@ html[data-lang="zh"] .lang-swap > .lang-en{
 .hero-animated-text h1{
   margin: 0 0 12px;
   line-height: 1.15;
-  color: #115e36be;
+  color: #115e36d1;
   font-size: 120px;
 }
 
@@ -349,6 +349,8 @@ html[data-lang="zh"] .lang-swap > .lang-en{
   transform: translateY(20px);
   transition: all 0.3s ease;
   pointer-events: none;
+  transition: opacity 600ms ease, transform 600ms ease;
+  will-change: opacity, transform;
 }
 
 .hero-shrink .appear-on-scroll{
@@ -933,4 +935,50 @@ textarea{
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+/* ================= STEP IMAGES — Standard size & ratio ================= */
+
+.step-grid{
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+/* figure reset */
+.step-item{
+  margin: 0;
+}
+
+/* fixed ratio container (pick ONE ratio) */
+.img-ratio{
+  width: 100%;
+  aspect-ratio: 4 / 3;          /* ✅ change to 1/1 or 16/9 if you want */
+  background: #fff;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-soft);
+}
+
+/* image fits inside the box */
+.img-ratio img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;          /* ✅ keep whole product visible */
+  display: block;
+}
+
+/* captions */
+.step-item figcaption{
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--text-sub);
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* mobile tighten */
+@media (max-width:700px){
+  .step-grid{ gap: 14px; }
+  .img-ratio{ aspect-ratio: 1 / 1; }  /* optional: nicer on mobile */
 }
