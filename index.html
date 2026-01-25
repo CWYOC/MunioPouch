@@ -698,12 +698,12 @@
       
       <div class="lang-swap">
         <p class="lang-en">The device will be kept by staff during morning assembly.</p>
-        <p class="lang lang-zh">裝置會在早會時由教職員暫存保管。</p>  
+        <p class="lang-zh">裝置會在早會時由教職員暫存保管。</p>  
       </div>
       
       <div class="lang-swap">
         <p class="lang-en">The student must complete a detention session after school to retrieve the device.</p>
-        <p class="lang lang-zh">學生需在放學後完成留校／處理程序後才可取回裝置。</p>
+        <p class="lang-zh">學生需在放學後完成留校／處理程序後才可取回裝置。</p>
       </div>
     </div>
 
@@ -714,7 +714,7 @@
       </div>
       <div class="lang-swap">
         <p class="lang-en"><strong>Recommended measures include:</strong></p>
-        <p class="lang lang-zh"><strong>建議處理方式：</strong></p>
+        <p class="lang-zh"><strong>建議處理方式：</strong></p>
       </div>
       <div class="lang-swap">
         <ul class="lang-en">
@@ -1153,7 +1153,10 @@
             <label for="name" class="lang-en">Name</label>
             <label for="name" class="lang-zh">姓名</label>
           </div>
-          <input type="text" id="name" name="name" placeholder="Your name / 請輸入姓名" required>
+          <div class="lang-swap">
+            <input type="text" id="name" class="lang-en" name="name" placeholder="Your name" required>
+            <input type="text" id="name" class="lang-zh"name="name" placeholder="請輸入姓名" required>
+          </div>
         </div>
 
         <div>
@@ -1161,7 +1164,10 @@
             <label for="role" class="lang-en">Role</label>
             <label for="role" class="lang-zh">職位</label>
           </div>
-          <input type="text" id="role" name="role" placeholder="Principal / Teacher / Admin / 校長／老師／行政">
+          <div class="lang-swap">
+            <input type="text" id="role" class="lang-en" name="role" placeholder="Principal / Teacher / Admin">
+            <input type="text" id="role" class="lang-zh" name="role" placeholder="校長／老師／行政">
+          </div>
         </div>
       </div>
 
@@ -1171,7 +1177,10 @@
             <label for="school" class="lang-en">School</label>
             <label for="school" class="lang-zh">機構名稱</label>
           </div>
-          <input type="text" id="school" name="school" placeholder="School name / 學校／機構名稱">
+          <div class="lang-swap">
+            <input type="text" id="school" class="lang-en" name="school" placeholder="School name">
+            <input type="text" id="school" class="lang-zh" name="school" placeholder="學校／機構名稱">            
+          </div>
         </div>
 
         <div>
@@ -1197,12 +1206,20 @@
             <label for="prefLang" class="lang-en">Preferred language</label>
             <label for="prefLang" class="lang-zh">首選語言</label>
           </div>
-          <select id="prefLang" name="lang">
-            <option value="">Please select / 請選擇</option>
+          <div class="lang-swap">
+            <select id="prefLang" class="lang-en" name="lang">
+            <option value="">Please select</option>
             <option value="en">English</option>
-            <option value="zh">繁體中文</option>
-            <option value="both">English + 中文</option>
-          </select>
+            <option value="zh">Chinese</option>
+            <option value="both">English + Chinese</option>
+            </select>
+            <select id="prefLang" class="lang-zh" name="lang">
+              <option value="">請選擇</option>
+              <option value="en">英文</option>
+              <option value="zh">繁體中文</option>
+              <option value="both">英文 + 繁體中文</option>
+              </select>
+          </div>
         </div>
       </div>
 
@@ -1214,8 +1231,10 @@
           <label for="message" class="lang-en">Message</label>
           <label for="message" class="lang-zh">查詢內容</label>
         </div>
-        <textarea id="message" name="message"
-          placeholder="e.g. Number of students, preferred start date, any specific needs / 例如：學生人數、預計推行日期、任何特定需要"></textarea>
+        <div class="lang-swap">
+          <textarea id="message" class="lang-en" name="message" placeholder="e.g. Number of students, preferred start date, any specific needs"></textarea>
+          <textarea id="message" class="lang-zh" name="message" placeholder="例如：學生人數、預計推行日期、任何特定需要"></textarea>
+        </div>
       </div>
 
       <div style="height:12px;"></div>
@@ -1237,7 +1256,6 @@
         </button>
       </div>
     </form>
-
   </div>
 
   <div class="info-card" style="max-width:1100px;margin:0 auto;">
