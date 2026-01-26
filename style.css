@@ -982,3 +982,171 @@ textarea{
   .step-grid{ gap: 14px; }
   .img-ratio{ aspect-ratio: 1 / 1; }  /* optional: nicer on mobile */
 }
+
+/* ===========================================================
+   MOBILE PATCH
+   =========================================================== */
+
+   @media (max-width: 900px){
+    /* ---------- Navbar: avoid overflow ---------- */
+    .navbar{
+      padding: 0 14px;
+      height: 60px;
+    }
+  
+    .nav-logo{
+      width: 96px;
+      height: 44px;
+    }
+  
+    /* let nav items wrap instead of running off-screen */
+    .nav-right{
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      max-width: calc(100vw - 130px);
+    }
+  
+    .nav-link,
+    .nav-right .lang-toggle{
+      font-size: 14px;
+      padding: 6px 0;
+      white-space: nowrap;
+    }
+  
+    /* ---------- HERO: keep readable + centered ---------- */
+    .hero-animated{
+      margin-top: 60px;
+      height: calc(100dvh - 60px);
+      min-height: calc(100vh - 60px);
+    }
+  
+    .hero-animated-text{
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: 16px;
+      width: min(92vw, 820px);
+      padding: 0 10px;
+    }
+  
+    .hero-animated-text h1{
+      font-size: 56px;
+      margin-bottom: 10px;
+    }
+  
+    /* When shrunk, keep it centered on small screens */
+    .hero-shrink .hero-animated-text{
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      width: min(92vw, 820px);
+    }
+  
+    .hero-shrink .hero-animated-text h1{
+      font-size: 44px;
+    }
+  
+    /* Shrunk product image stays centered */
+    .hero-animated-img2{
+      width: min(72vw, 360px);
+      max-height: 360px;
+    }
+  
+    .hero-shrink .hero-animated-img-container{
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    /* ---------- BI: always 1 column on phone ---------- */
+    .bi{
+      grid-template-columns: 1fr !important;
+      gap: 20px;
+    }
+  
+    /* ---------- Sections spacing ---------- */
+    .section{
+      padding: 54px 16px;
+    }
+  
+    .section h2{
+      font-size: 34px;
+    }
+  
+    .section h3{
+      font-size: 18px;
+    }
+  
+    /* ---------- Cards / grids ---------- */
+    .grid{
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  
+    .card{
+      padding: 18px;
+    }
+  
+    /* ---------- Video blocks ---------- */
+    .video-wrap{
+      max-width: 100%;
+      margin: 18px auto 0;
+    }
+  
+    /* ---------- Tables: make sure it scrolls nicely ---------- */
+    .table-wrap{
+      border-radius: 14px;
+    }
+  
+    table{
+      min-width: 720px; /* force horizontal scroll instead of squishing text */
+    }
+  
+    /* ---------- Forms ---------- */
+    .form-wrap{
+      margin: 32px auto;
+      padding: 22px 16px;
+      max-width: 94vw;
+    }
+  
+    .form-row{
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+  
+    input, textarea, select{
+      font-size: 16px; /* prevents iOS zoom on focus */
+    }
+  
+    /* ---------- Contact info blocks ---------- */
+    .contact-info-grid{
+      grid-template-columns: 1fr;
+      max-width: 94vw;
+    }
+  
+    /* ---------- FAQ ---------- */
+    .faq-section,
+    .info-section{
+      padding: 46px 16px;
+    }
+  
+    .faq-grid,
+    .info-grid{
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+  
+  @media (max-width: 420px){
+    /* extra small phones */
+    .nav-right{
+      gap: 10px;
+    }
+    .hero-animated-text h1{
+      font-size: 48px;
+    }
+    .hero-shrink .hero-animated-text h1{
+      font-size: 40px;
+    }
+  }
+  

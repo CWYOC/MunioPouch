@@ -53,7 +53,7 @@
   <!-- Content wrapper (stable) -->
   <div class="hero-inner">
     <!-- Product image -->
-    <div class="hero-media bi hero-animated-img-container">
+    <div class="hero-media hero-animated-img-container" id="heroBi">
       <img src="assets/hero2.jpeg" class="hero-animated-img2" alt="Munio Mobile Pouch">
     </div>
     <!-- Hero text -->
@@ -1435,6 +1435,18 @@
     if (window.scrollY > 150) hero.classList.add("hero-shrink");
     else hero.classList.remove("hero-shrink");
   });
+
+  window.addEventListener("scroll", function () {
+    const biTarget = document.getElementById("heroBi");
+    if (!biTarget) return;
+
+    if (window.scrollY > 150) {
+      biTarget.classList.add("bi");
+    } else {
+      biTarget.classList.remove("bi");
+    }
+  });
+
 
   // ================= Active nav highlight =================
   const navLinks = Array.from(document.querySelectorAll(".nav-right .nav-link"))
