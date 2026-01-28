@@ -400,7 +400,6 @@ html[data-lang="zh"] .lang-swap > .lang-en{
 }
 
 /* ================= VIDEO WRAP ================= */
-
 .video-wrap{
   max-width: 750px;
   margin: 30px auto 0;
@@ -409,14 +408,17 @@ html[data-lang="zh"] .lang-swap > .lang-en{
   box-shadow: var(--shadow-soft);
   border: 1px solid var(--border-soft);
   overflow: hidden;
+  aspect-ratio: 16 / 9;
 }
 
 .video-wrap video{
   width: 100%;
-  height: auto;
+  height: 100%;       
   display: block;
   background: #000;
+  object-fit: cover; 
 }
+
 
 /* ================= MAIN CONTENT ================= */
 
@@ -984,7 +986,7 @@ textarea{
 }
 
 /* ===========================================================
-   MOBILE PATCH
+   MOBILE PATCH 
    =========================================================== */
 
    @media (max-width: 900px){
