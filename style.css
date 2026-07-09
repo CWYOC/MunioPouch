@@ -438,6 +438,24 @@ html[data-lang="zh"] .lang-swap > .lang-en{
   object-fit: cover; 
 }
 
+.video-wrap3{
+  max-width: 750px;
+  margin: 0px;
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border-soft);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.video-wrap3 video{
+  width: 100%;
+  height: 100%;       
+  display: block;
+  background: #000;
+  object-fit: cover; 
+}
 
 /* ================= MAIN CONTENT ================= */
 
